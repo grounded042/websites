@@ -1,0 +1,573 @@
+/* Normalize */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden], template {
+    display: none;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+a {
+    background: transparent;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:active, a:hover {
+    outline: 0;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b, strong {
+    font-weight: 700;
+}
+dfn {
+    font-style: italic;
+}
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+mark {
+    background: #FF0;
+    color: #000;
+}
+code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+pre {
+    white-space: pre-wrap;
+}
+q {
+    quotes: "\201C""\201D""\2018""\2019";
+}
+small {
+    font-size: 80%;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+img {
+    border: 0;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 0;
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0;
+    padding: 0;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+button, input {
+    line-height: normal;
+}
+button, select {
+    text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End Normalize */
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Font styles
+-------------------------------------------------- */
+
+body {
+    font-family: "proxima-nova",sans-serif;
+}
+
+h3 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.proxima-thin {
+    font-weight: 100;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* End font styles
+-------------------------------------------------- */
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    /*margin-bottom: 60px;*/
+    height: 100%;
+}
+
+.jonhikes-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #474747;
+    color: white;
+    z-index: 2;
+}
+.jonhikes-footer .jonhikes-container {
+    margin-top: 25px;
+}
+
+.jonhikes-footer .jonhikes-container div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.jonhikes-footer .jonhikes-container div a {
+    text-decoration: none;
+}
+
+.jonhikes-footer .jonhikes-container div a:link,
+.jonhikes-footer .jonhikes-container div a:visited {
+    color: white;
+}
+
+/* End sticky footer styles
+-------------------------------------------------- */
+
+/* Header styles
+-------------------------------------------------- */
+.header-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.header-overlay {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    overflow: hidden;
+    background-image: url('/assets/images/overlay-pattern.png');
+    opacity: 0.15;
+    background-color: black;
+}
+
+.header-background {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header-description {
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+.header-description-wrapper {
+  /*align-self: center;*/
+  margin: 0 auto;
+  margin-top: 75px;
+  text-align: center;
+  color: white;
+}
+
+.header-description .logo a img {
+    max-height: 300px;
+    margin: 25px;
+}
+
+.blog-description {
+    color: white;
+}
+
+/* End header styles
+-------------------------------------------------- */
+
+/* All container styles
+-------------------------------------------------- */
+
+#all {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    -webkit-transition:  left 0.4s ease-in-out;
+    -moz-transition:  left 0.4s ease-in-out;
+    -ms-transition:  left 0.4s ease-in-out;
+    -o-transition:  left 0.4s ease-in-out;
+    transition:  left 0.4s ease-in-out;
+}
+
+/* End all container styles
+-------------------------------------------------- */
+
+/* Main content styles
+-------------------------------------------------- */
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    /*padding: 10px;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+/* End main content styles
+-------------------------------------------------- */
+
+/* Posts loop styles
+-------------------------------------------------- */
+
+.post-loop .post {
+    max-width: 900px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 0 auto;
+}
+
+.post-header {
+    text-align: center;
+}
+
+.post-header a {
+    text-decoration: none;
+}
+
+.post-header a:link,
+.post-header a:visited {
+    color: #474747;
+}
+
+.post-title {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.post-meta p {
+    margin-top: 0;
+}
+
+.post-excerpt {
+    text-align: justify;
+}
+
+.post-excerpt a {
+    text-decoration: none;
+}
+
+.post-excerpt a:link,
+.post-excerpt a:visited {
+    color: #474747;
+}
+
+/* End posts loop styles
+-------------------------------------------------- */
+
+/* Side menu styles
+-------------------------------------------------- */
+
+.menu {
+    position: fixed;
+    left: -175px;
+    width: 175px;
+    height: 100%;
+    background-color: #2f2f2f;
+    z-index: 3;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: inset -3px 3px 5px 0px rgba(0,0,0,0.15); 
+    -moz-box-shadow: inset -3px 3px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: inset -3px 3px 5px 0px rgba(0,0,0,0.15);
+    
+    transition: 500ms ease-in-out;
+}
+
+.menu.active {
+    transition: 500ms ease-in-out;
+    left: 0;
+}
+
+.menu-logo {
+    height: 100px;
+    width: 100%;
+}
+
+.blog-logo {
+    display: block;
+    float: left;
+    background: none !important;
+    border: none !important;
+    width: 100%;
+    margin: auto;
+}
+
+.blog-logo img {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    height: 80px;
+    padding: 1px 0 5px 0;
+    width: auto;
+    margin: 10px 20px;
+
+    float: right;
+}
+
+.menu-nav ul, .social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-nav ul li, .social ul li {
+    margin: 0;
+    display: block;
+    position: relative;
+}
+
+.menu-nav ul li.first a {
+    border-top: 1px solid #474747;
+}
+
+.menu-nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    display: block;
+    border-bottom: 1px solid #474747;
+    text-align: right;
+    z-index: 5;
+    position: relative;
+    opacity: .75;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    letter-spacing: 1px;
+}
+
+.menu-nav ul li a:hover {
+    opacity: 1;
+}
+
+.menu-nav ul li:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+.menu-nav ul li:after {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    content: '';
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    opacity: .5;
+    background-color: #3b3b3b;
+}
+
+.social ul li {
+    padding: 15px 20px;
+    float: right;
+}
+
+/* End side menu styles
+-------------------------------------------------- */
+
+/* Toggler styles
+-------------------------------------------------- */
+
+/* http://www.elijahmanor.com/css-animated-hamburger-icon/ */
+
+#nav-toggle { 
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 5;
+    outline: none;
+
+    transition: 500ms ease-in-out;
+}
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #474747;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active {
+    transition: 500ms ease-in-out;
+    left: 185px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+}
+
+/* End toggler styles
+-------------------------------------------------- */
+
+/* Shared Content Styles
+-------------------------------------------------- */
+
+.jonhikes-container {
+   width: 75%;
+   margin: auto;
+}
+
+/* Instagram styles
+-------------------------------------------------- */
+
+.ig-b- {
+    display: inline-block;
+}
+.ig-b- img {
+    visibility: hidden;
+}
+.ig-b-:hover {
+    background-position: 0 -60px;
+}
+.ig-b-:active {
+    background-position: 0 -120px;
+}
+.ig-b-v-24 {
+    width: 137px;
+    height: 24px;
+    background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2 / 1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .ig-b-v-24 {
+        background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png);
+        background-size: 160px 178px;
+    }
+}
+
+/* End instagram styles
+-------------------------------------------------- */
