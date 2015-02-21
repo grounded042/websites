@@ -146,6 +146,10 @@ table {
     box-sizing: border-box;
 }
 
+body {
+    background: whitesmoke;
+}
+
 /* Font styles
 -------------------------------------------------- */
 
@@ -312,7 +316,7 @@ body {
 /* Posts loop styles
 -------------------------------------------------- */
 
-.post-loop .post {
+.post-loop .post, .post {
     max-width: 900px;
     padding-left: 35px;
     padding-right: 35px;
@@ -354,6 +358,42 @@ body {
     color: #474747;
 }
 
+.post-template .post-title {
+    margin-top: 55px;
+}
+
+.post-template .post {
+    max-width: 675px;
+}
+
+.post-template .post-content {
+    font-family: "alegreya",serif;
+    font-size: 20px;
+}
+
+.content a {
+    color: rgb(0, 197, 255);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content a:hover:after {
+    width: 100%;
+}
+
+.content a:after {
+    /*text-decoration: underline;*/
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: rgb(0, 197, 255);
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    transition: width 0.5s ease;    
+}
+
 /* End posts loop styles
 -------------------------------------------------- */
 
@@ -374,6 +414,7 @@ body {
     box-shadow: inset -3px 3px 5px 0px rgba(0,0,0,0.15);
     
     transition: 500ms ease-in-out;
+    top: 0;
 }
 
 .menu.active {
@@ -483,6 +524,7 @@ body {
     top: 10px;
     z-index: 5;
     outline: none;
+    cursor: pointer;
 
     transition: 500ms ease-in-out;
 }
