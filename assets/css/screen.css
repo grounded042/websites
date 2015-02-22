@@ -218,27 +218,23 @@ html {
 }
 
 body {
-    /*margin-bottom: 60px;*/
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .jonhikes-footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
     background-color: #474747;
     color: white;
     z-index: 2;
 }
-.jonhikes-footer .jonhikes-container {
-    margin-top: 25px;
-}
 
 .jonhikes-footer .jonhikes-container div {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .jonhikes-footer .jonhikes-container div a {
@@ -257,7 +253,7 @@ body {
 -------------------------------------------------- */
 .header-container {
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -295,7 +291,6 @@ body {
 }
 
 .header-description-wrapper {
-  /*align-self: center;*/
   margin: 0 auto;
   margin-top: 75px;
   text-align: center;
@@ -341,11 +336,11 @@ body {
 
 .main-content {
     width: 100%;
-    height: 100%;
-    /*padding: 10px;*/
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     position: relative;
+    flex: 1 auto;
+    margin-bottom: 30px;
 }
 
 /* End main content styles
@@ -359,10 +354,6 @@ body {
     padding-left: 35px;
     padding-right: 35px;
     margin: 0 auto;
-}
-
-.post-loop {
-    margin-bottom: 30px;
 }
 
 .post-header {
@@ -432,10 +423,6 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    /*position: absolute;*/
-    /*top: -40px;*/
-    /*left: 50%;*/
-    /*margin-left: -40px;*/
     min-width: 120px;
     height: 120px;
     border-radius: 100%;
@@ -494,8 +481,6 @@ body {
 }
 
 .share {
-    /*height: 100px;*/
-    /*display: flex;*/
     text-align: center;
     margin-bottom: 45px;
     margin-top: 45px;
