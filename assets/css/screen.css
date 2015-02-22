@@ -361,6 +361,10 @@ body {
     margin: 0 auto;
 }
 
+.post-loop {
+    margin-bottom: 30px;
+}
+
 .post-header {
     text-align: center;
 }

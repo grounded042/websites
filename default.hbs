@@ -25,59 +25,55 @@
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-    <section id="all">
-        <nav class="menu">
-            <section class=menu-logo>
-                {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-            </section>
-            <div class=menu-nav>
-                <ul>
-                    <li class="first proxima-thin"><a href="{{@blog.url}}">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>            
-            </div>
-{{!--             <div class=social>
-                <ul>
-                    <li><a href="https://twitter.com/grounded042" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @grounded042</a></li>
-                    <li><div class="fb-follow" data-href="https://www.facebook.com/jonathan.carl" data-colorscheme="dark" data-layout="button" data-show-faces="true"></div></li>
-                    <li><a href="http://instagram.com/grounded042?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a></li>
-                </ul>
-            </div> --}}
-        </nav>
-        <section class=main-content>
-            <a id="nav-toggle"><span></span></a>
-        
-
-            {{! Everything else gets inserted here }}
-            {{{body}}}
-
-            <footer class="jonhikes-footer proxima-thin">
-                <div class=jonhikes-container>
-                    <div>
-                        <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}} | Proudly published with <a href="https://ghost.org">Ghost</a>
-                    </div>
-                </div>         
-            </footer>
-
-            {{! Ghost outputs important scripts and data with this tag }}
-            {{ghost_foot}}
+    <nav class="menu">
+        <section class=menu-logo>
+            {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
         </section>
+        <div class=menu-nav>
+            <ul>
+                <li class="first proxima-thin"><a href="{{@blog.url}}">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>            
+        </div>
+        {{!-- <div class=social>
+            <ul>
+                <li><a href="https://twitter.com/grounded042" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @grounded042</a></li>
+                <li><div class="fb-follow" data-href="https://www.facebook.com/jonathan.carl" data-colorscheme="dark" data-layout="button" data-show-faces="true"></div></li>
+                <li><a href="http://instagram.com/grounded042?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a></li>
+            </ul>
+        </div> --}}
+    </nav>
+    <section class=main-content>
+        <a id="nav-toggle"><span></span></a>   
+
+        {{! Everything else gets inserted here }}
+        {{{body}}}        
+        
     </section>
-
-    {{! The main JavaScript file for Jon Hikes }}
-    <script type="text/javascript" src="{{asset "js/jonhikes.js"}}"></script>
-
-    <!-- Social -->    
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    <!-- <div id="fb-root"></div> -->
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=217033061691196&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+{{!--     <footer class="jonhikes-footer proxima-thin">
+        <div class=jonhikes-container>
+            <div>
+                <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}} | Proudly published with <a href="https://ghost.org">Ghost</a>
+            </div>
+        </div>         
+    </footer> --}}
 
 </body>
+{{! The main JavaScript file for Jon Hikes }}
+<script type="text/javascript" src="{{asset "js/jonhikes.js"}}"></script>
+
+<!-- Social -->    
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!-- <div id="fb-root"></div> -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=217033061691196&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
 </html>
