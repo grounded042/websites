@@ -358,6 +358,8 @@ body {
 
 .post-header {
     text-align: center;
+    margin-bottom: 75px;
+    margin-top: 100px;
 }
 
 .post-title {
@@ -462,6 +464,7 @@ body {
 
 .author {
     display: flex;
+    margin-bottom: 44px;
 }
 
 .author-details .bio {
@@ -483,7 +486,7 @@ body {
 .share {
     text-align: center;
     margin-bottom: 45px;
-    margin-top: 45px;
+    margin-top: 75px;
 }
 
 .share-details a span {
