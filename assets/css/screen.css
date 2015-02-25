@@ -340,34 +340,37 @@ body {
     -moz-box-sizing: border-box;
     position: relative;
     flex: 1 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* End main content styles
 -------------------------------------------------- */
 
-/* Posts loop styles
+/* Post/page styles
 -------------------------------------------------- */
 
-.post-loop .post, .post {
+.post-loop .post {
     max-width: 900px;
     padding-left: 35px;
     padding-right: 35px;
+}
+
+.post, .page {
     margin: 0 auto;
 }
 
 .post-loop .post .post-header {
-    margin-bottom: 12px;
+    margin-bottom: 0;
     margin-top: 50px;
 }
 
-.post-header {
+.post-header, .page-header {
     text-align: center;
     margin-bottom: 75px;
     margin-top: 100px;
 }
 
-.post-title {
+.post-title, .page-title {
     font-size: 36px;
     margin-bottom: 0;
 }
@@ -402,20 +405,20 @@ body {
     margin-top: 5px;
 }
 
-.post-template .post-title {
+.post-template .post-title, .page-template .page-title  {
     margin-top: 55px;
 }
 
-.post-template .post {
+.post-template .post, .page-template .page {
     max-width: 675px;
 }
 
-.post-template .post-content, .post-excerpt, p {
+.post-template .post-content, .post-excerpt, p, .page-content {
     font-family: "alegreya",serif;
     font-size: 20px;
 }
 
-.post-content {
+.post-content, .page-content {
     text-align: justify;
 }
 
