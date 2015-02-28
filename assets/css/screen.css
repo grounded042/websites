@@ -185,13 +185,18 @@ body {
     font-family: "proxima-nova",sans-serif;
 }
 
+h1, h2, h3, h4 {
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
 h1 {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
     margin-bottom: 0;
 }
 
 h2 {
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin-bottom: 0;
 }
 
@@ -201,7 +206,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
 }
 
@@ -321,6 +326,7 @@ body {
 .blog-description {
     color: white;
     font-family: "alegreya",serif;
+    font-size: 2.6rem;
 }
 
 /* End header styles
@@ -386,6 +392,7 @@ body {
 .post-title, .page-title {
     font-size: 36px;
     margin-bottom: 0;
+    padding: 0;
 }
 
 .post-title a {
@@ -433,6 +440,11 @@ body {
 
 .post-content, .page-content {
     text-align: justify;
+}
+
+.post-content h1, .post-content h2, .post-content h3, .post-content h4 {
+    text-align: center;
+    font-family: "proxima-nova",sans-serif;
 }
 
 /* End posts loop styles
