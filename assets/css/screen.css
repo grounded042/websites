@@ -372,6 +372,8 @@ body {
 
 .post, .page {
     margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .post-loop .post .post-header {
