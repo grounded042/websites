@@ -240,7 +240,7 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: #474747;
+    background-color: #2f2f2f;
     color: white;
     z-index: 2;
 }
@@ -674,16 +674,18 @@ body {
     outline: none;
     cursor: pointer;
 
+    cursor: pointer; 
+    padding: 10px 35px 16px 0px; 
+
     transition: 500ms ease-in-out;
 }
 
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: #474747;
+  background: #2f2f2f;
   position: absolute;
   display: block;
   content: '';
@@ -714,6 +716,52 @@ body {
 #nav-toggle.active span:after {
   transform: translateY(-10px) rotate(-45deg);
   top: 10px;
+}
+
+@media (max-width: 1084px) {
+    #nav-toggle {
+        background-color: #2f2f2f;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 26px;
+    }
+
+    a#nav-toggle:hover:after, a.blog-logo:hover:after {
+        width: 0%;
+    }
+
+    #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+        background-color: whitesmoke;
+    }
+
+    .menu-nav ul li a {
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        height: 257px;
+        left: 0;
+        top: -257px;
+    }
+
+    .menu.active {
+        left: 0;
+        top: 0px;
+    }
+
+    .blog-logo img {
+        margin: 10px auto;
+        float: none;
+    }
+
+    #nav-toggle.active {
+        left: 0;
+        top: 257px;
+    }
 }
 
 /* End toggler styles
