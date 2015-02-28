@@ -762,6 +762,10 @@ body {
         left: 0;
         top: 257px;
     }
+
+    h3.blog-description {
+        font-size: 2rem;
+    }
 }
 
 /* End toggler styles
