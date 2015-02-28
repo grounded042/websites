@@ -372,6 +372,9 @@ body {
 
 .post, .page {
     margin: 0 auto;
+}
+
+.content .post, .content .page {
     padding-left: 24px;
     padding-right: 24px;
 }
