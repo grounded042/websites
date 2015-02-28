@@ -493,6 +493,7 @@ body {
 
 .author-details h3, .author-details h4 {
     margin: 0;
+    padding: 0;
 }
 
 .author {
