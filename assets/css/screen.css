@@ -185,16 +185,28 @@ body {
     font-family: "proxima-nova",sans-serif;
 }
 
+h1 {
+    font-size: 3.6rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2.6rem;
+    margin-bottom: 0;
+}
+
 h3 {
-    font-weight: 300;
-    font-style: normal;
-    font-size: 36px;
+    font-size: 1.6rem;
+    margin-bottom: 0;
 }
 
 h4 {
-    font-weight: 200;
-    font-style: normal;
-    font-size: 21px;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
 }
 
 .proxima-thin {
