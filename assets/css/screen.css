@@ -228,9 +228,14 @@ html {
     position: relative;
     min-height: 100%;
     height: 100%;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 body {
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: column; /* Safari 6.1+ */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -297,6 +302,7 @@ body {
 .header-description {
     position: absolute;
     display: flex;
+    display: -webkit-flex; /* Safari */
     margin: 0 auto;
     height: 100vh;
     width: 100vw;
@@ -354,6 +360,8 @@ body {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     position: relative;
+    -webkit-flex: 1 auto; /* Safari 6.1+ */
+    -ms-flex: 1 auto; /* IE 10 */ 
     flex: 1 auto;
     margin-bottom: 50px;
 }
@@ -499,6 +507,7 @@ body {
 
 .author {
     display: flex;
+    display: -webkit-flex; /* Safari */
     margin-bottom: 44px;
 }
 
