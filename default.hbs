@@ -39,13 +39,9 @@
         <section class=menu-logo>
             {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
         </section>
-        <div class=menu-nav>
-            <ul>
-                <li class="first proxima-thin"><a href="{{@blog.url}}">HOME</a></li>
-                <li><a href="{{@blog.url}}/about">ABOUT</a></li>
-                <li><a href="{{@blog.url}}/contact">CONTACT</a></li>
-            </ul>            
-        </div>
+
+        {{navigation}}
+        
         {{!-- <div class=social>
             <ul>
                 <li><a href="https://twitter.com/grounded042" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @grounded042</a></li>

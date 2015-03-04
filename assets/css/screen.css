@@ -599,11 +599,12 @@ body {
     position: relative;
 }
 
-.menu-nav ul li.first a {
+.menu-nav ul li:first-of-type a {
     border-top: 1px solid #474747;
 }
 
 .menu-nav ul li a {
+    text-transform: uppercase;
     text-decoration: none;
     color: white;
     padding: 15px 20px;
