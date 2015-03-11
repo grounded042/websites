@@ -443,9 +443,31 @@ body {
     text-align: justify;
 }
 
+.main-content .post-content code, .main-content .page-content code {
+    white-space: pre;
+    font: 1rem Courier,monospace;
+}
+
+.main-content .post-content p code {
+    padding: 6px 3px 4px 6px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 0;
+    color: rgb(56, 56, 56);
+}
+
+.main-content .post-content pre {
+    border-radius: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .post-content h1, .post-content h2, .post-content h3, .post-content h4 {
     text-align: center;
     font-family: "proxima-nova",sans-serif;
+}
+
+blockquote p {
+    font-style: italic;
 }
 
 /* End posts loop styles
