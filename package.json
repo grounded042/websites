@@ -1,8 +1,0 @@
-{
-  "name": "jonhikes",
-  "version": "0.0.2",
-  "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.1.0"
-  }
-}
