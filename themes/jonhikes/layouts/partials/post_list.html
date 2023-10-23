@@ -1,0 +1,19 @@
+<div id="posts">
+	<h1>Posts</h1>
+	{{- $allPosts := where .Site.RegularPages "Type" "posts" -}}
+	{{- $len := ($allPosts | len) -}}
+	{{- range $index, $post := $allPosts -}}
+	<div class="list-post">
+		<header>
+			<a aria-label="post link to {{ $post.Title | plainify }}" href="{{ $post.Permalink }}"><h2>{{ $post.Title }}</h2></a>
+			<h5>{{ dateFormat "2006-01-02" $post.Date }} | {{ printf "%d min" $post.ReadingTime }} read</h5>
+				{{ partial "post-img.html" (dict "context" $post "src" $post.Params.image "caption" $post.Title) }}
+			{{/* TODO: this image should be made into something that's a specific height. It should error if it's not the right height? */}}
+		</header>
+		<section>
+			<p>{{ $post.Summary | plainify | htmlUnescape }}{{ if $post.Truncated }}..{{ end }}</p>
+		</section>
+	</div>
+	{{ if not (eq $index (sub $len 1)) }}<hr/>{{ end }}
+	{{ end }}
+</div>

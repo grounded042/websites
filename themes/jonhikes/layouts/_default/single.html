@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="post">
+	<header>
+		<h1>{{ .Title }}</h1>
+		<h5>{{ dateFormat "2006-01-02" .Date }} | {{ printf "%d min" .ReadingTime }}</h5>
+	</header>
+	<section>
+		{{ .Content }}
+	</section>
+</article>
+{{ end }}

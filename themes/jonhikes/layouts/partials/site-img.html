@@ -1,0 +1,24 @@
+{{/*
+TODO: fail if file not found
+{{ if fileExists (replace .Params.featured_image "jpg" "avif") }}
+
+TODO: lazy loading
+
+TODO: LQIP?
+- https://endler.dev/2017/image-previews/
+
+*/}}
+
+<div class="site-img">
+	<picture>
+		{{ $filename := (strings.TrimSuffix ".HEIC" .src) }}
+		<source type="image/avif" srcset="{{ $filename }}.avif 1x, {{ $filename }}@1.5.avif 1.5x, {{ $filename }}@2x.avif 2x, {{ $filename }}@3x.avif 3x, {{ $filename }}@4x.avif 4x">
+		<source type="image/webp" srcset="{{ $filename }}.webp 1x, {{ $filename }}@1.5.webp 1.5x, {{ $filename }}@2x.webp 2x, {{ $filename }}@3x.webp 3x, {{ $filename }}@4x.webp 4x">
+		<img
+			src="og image"
+			srcset="{{ $filename }}.jpeg 1x, {{ $filename }}@1.5.jpeg 1.5x, {{ $filename }}@2x.jpeg 2x, {{ $filename }}@3x.jpeg 3x, {{ $filename }}@4x.jpeg 4x"
+			sizes="(max-width: 800px) 100vw, 800px"
+			alt="{{ .caption }}"
+		/>
+	</picture>
+</div>
