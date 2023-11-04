@@ -1,0 +1,31 @@
+{% macro post_img(path, alt) %}
+{% set base_path = path | trim_end_matches(pat=".HEIC") %}
+<div class="r-img">
+	<!-- TODO: rename class to post-img -->
+	<picture>
+		<source type="image/avif" srcset="
+			{{ get_url(path=base_path ~ ".avif") }} 1x,
+			{{ get_url(path=base_path ~ "@2x.avif") }} 2x,
+			{{ get_url(path=base_path ~ "@3x.avif") }} 3x,
+			{{ get_url(path=base_path ~ "@4x.avif") }} 4x
+		">
+		<source type="image/webp" srcset="
+			{{ get_url(path=base_path ~ ".webp") }} 1x,
+			{{ get_url(path=base_path ~ "@2x.webp") }} 2x,
+			{{ get_url(path=base_path ~ "@3x.webp") }} 3x,
+			{{ get_url(path=base_path ~ "@4x.webp") }} 4x
+		">
+		<img
+			src="{{ get_url(path=base_path ~ ".png") }}"
+			srcset="
+				{{ get_url(path=base_path ~ ".png") }} 1x,
+				{{ get_url(path=base_path ~ "@2x.png") }} 2x,
+				{{ get_url(path=base_path ~ "@3x.png") }} 3x,
+				{{ get_url(path=base_path ~ "@4x.png") }} 4x
+			"
+			sizes="(max-width: 800px) 100vw, 800px"
+			alt="{{ alt }}"
+		/>
+	</picture>
+</div>
+{% endmacro post_img %}

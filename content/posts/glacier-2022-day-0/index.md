@@ -1,10 +1,11 @@
 ---
 title: "Glacier 2022 - Day 0"
-date: 2022-10-08T16:00:00-06:00
-image: images/cover.HEIC
+date: 2022-10-08
+extra:
+  image: images/cover.HEIC
 ---
 
-{{<post-img src="images/1.HEIC" caption="our tent at the KOA">}}
+{{ post_img(path="images/1.HEIC", alt="our tent at the KOA") }}
 
 Logan and I started out the day around 7:30 by loading into my truck and heading out on the drive to Glacier.
 

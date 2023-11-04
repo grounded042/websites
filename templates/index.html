@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% import "macros.html" as macros %}
+
+{% block content %}
+<div class="cover">
+	<div class="logo">
+		<picture>
+			<source type="image/avif" srcset="
+				{{ get_url(path="images" ~ "/logo.avif") }} 1x,
+				{{ get_url(path="images/logo@2x.avif") }} 2x,
+				{{ get_url(path="images/logo@3x.avif") }} 3x,
+				{{ get_url(path="images/logo@4x.avif") }} 4x
+			">
+			<source type="image/webp" srcset="
+				{{ get_url(path="images/logo.webp") }} 1x,
+				{{ get_url(path="images/logo@2x.webp") }} 2x,
+				{{ get_url(path="images/logo@3x.webp") }} 3x,
+				{{ get_url(path="images/logo@4x.webp") }} 4x
+			">
+			<img
+				src="{{ get_url(path="images/logo.png") }}"
+				srcset="
+					{{ get_url(path="images/logo.png") }} 1x,
+					{{ get_url(path="images/logo@2x.png") }} 2x,
+					{{ get_url(path="images/logo@3x.png") }} 3x,
+					{{ get_url(path="images/logo@4x.png") }} 4x
+				"
+				sizes="(max-width: 300px) 100vw, 300px"
+				alt="jonhikes logo"
+			/>
+		</picture>
+	</div>
+</div>
+<div id="posts">
+	<h1>Posts</h1>
+	{% set blog_posts = get_section(path="posts/_index.md") %}
+	  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+	{% for post in blog_posts.pages %}
+	<div class="list-post">
+		<header>
+			<a aria-label="post link to {{ post.title }}" href="{{ post.permalink | safe }}"><h2>{{ post.title }}</h2></a>
+			<h5>{{ post.date }} | {{ post.reading_time }} min read</h5>
+			{% set img_path = post.colocated_path ~ post.extra.image %}
+			{{ macros::post_img(path=img_path, alt=post.title) }}
+			<!-- partial "post-img.html" (dict "context" $post "src" $post.Params.image "caption" $post.Title) -->
+		</header>
+		<section>
+			<p>{{ post.content | striptags | truncate(length=400) | safe }}</p>
+		</section>
+	</div>
+	{% if not loop.last %}
+	<hr/>
+	{% endif %}
+	{% endfor %}
+</div>
+{% endblock content %}

@@ -1,9 +1,0 @@
-<header>
-	<nav>
-		<a href="{{ .Site.Home.Permalink }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a>
-		<b>-</b>
-		{{ with .Site.Home.OutputFormats.Get "rss" -}}
-		<a href="{{ .Permalink }}" title="RSS">RSS</a>
-		{{ end -}}
-	</nav>
-</header>

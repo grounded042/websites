@@ -1,6 +1,11 @@
 jonhikes
 ========
 
+# site
+I tried hugo, but it was too much. I am currently using Zola, but it's not my
+favorite. I need something simple. The on missing feature is I want it to
+validate that all referenced images exist.
+
 # images
 There are 4 types of images:
 - logo image

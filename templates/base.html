@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- TODO: add more here -->
+		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<style type="text/css">body{font-family:monospace;}</style>
+
+
+		<link rel="stylesheet" href="{{ get_url(path="css/normalize.css") }}">
+		<link rel="stylesheet" href="{{ get_url(path="css/main.css") }}">
+	
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+		{% block rss %}
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+		{% endblock %}
+
+
+		<!-- TODO: change title based on page -->
+		<title>{{ config.title }}</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="{{ config.base_url }}" title="{{ config.title }}">{{ config.title }}</a>
+				<b>-</b>
+				<a href="{{ get_url(path="rss.xml", trailing_slash=false) }}" title="RSS">RSS</a>
+			</nav>
+		</header>
+		<div id="content">
+		{% block content %} {% endblock %}
+		</div>
+		<footer>
+			<hr/>
+			<p>Copyright {{ now() | date(format="%Y") }} {{ config.title }}</p>
+		</footer>
+	</body>
+</html>
