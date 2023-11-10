@@ -1,7 +1,7 @@
-node_modules
 *.avif
 *.jpeg
 *.webp
 *.png
 public
 resources
+.env
