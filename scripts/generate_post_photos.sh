@@ -39,4 +39,4 @@ convert_to_all_formats() {
 }
 
 export -f convert_image convert_to_all_formats
-find ./content/posts -name '*.HEIC' -exec bash -c 'convert_to_all_formats "{}"' \;
+find ./jonhikes/content/posts -name '*.HEIC' -exec bash -c 'convert_to_all_formats "{}"' \;

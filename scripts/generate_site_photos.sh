@@ -44,7 +44,7 @@ convert_to_all_formats() {
 }
 
 convert_logo() {
-	local file=./assets/images/logo.HEIC
+	local file=./jonhikes/static/images/logo.HEIC
 
 	echo "Working on: $file"
 	file_no_ext=$(echo "$file" | sed -e s/.HEIC//)
@@ -60,6 +60,6 @@ convert_logo() {
 }
 
 export -f convert_image convert_to_all_formats
-convert_to_all_formats ./assets/images/cover.HEIC
+convert_to_all_formats ./jonhikes/static/images/cover.HEIC
 convert_logo
 # convert_to_all_formats ./assets/images/logo.HEIC
