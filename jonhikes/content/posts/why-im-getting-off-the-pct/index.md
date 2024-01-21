@@ -1,0 +1,20 @@
+---
+title: "Why I’m Getting off the PCT"
+date: 2018-06-24
+extra:
+  image: images/cover.HEIC
+---
+
+The PCT so far has been an amazing adventure. I have gotten to backpack farther than I’ve ever backpacked before. I have pushed myself to my limits hiking long days. I have met amazing people. I have seen so much of God’s beautiful creation. I have grown in my outdoor skills. I cannot recount everything that has happened on the trail, but I am confident that there are lessons I will be learning from the trail for years to come.
+
+This past week I made the decision to stop my thru-hike. The main reason is to be with my wife. Monica and I set out on the PCT together. We planned and saved for months, together. We trained together. We dreamed of the trail together. When Monica got injured 300 miles in, I continued on. Monica wanted me to continue and I wanted to continue. I pushed on for 400 more miles and made it all the way through the desert section of the PCT. In those 400 miles I learned a lot. I had fun, I saw incredible sites, and I pushed harder than I ever have before — but every day was a chore. Every day turned into seeing how far I could go so I could see Monica sooner. My partner whom I had shared each mile with for 300 miles was gone, and that hurt. I could call and text her sometimes, but that wasn’t the same. I missed waking up next to her. I missed hearing her laugh at my lame jokes. I missed her common sense. I missed her. While I could push on and silence the part of me that missed her, I didn’t like doing that. Monica was incredibly supportive the whole time. She wanted me to keep going. She wanted me to pursue this dream. She never once told me that she didn’t want me to hike. She wanted to be with me, but she didn’t want to get in the way of me finishing the PCT.
+
+Starting in Tehachapi I entertained the idea of getting off the trail. I wasn’t going to make a decision overnight, and I decided I would not make a decision until my last zero with Monica after I reached Kennedy Meadows. I did a lot of thinking that week. I went back and forth in my mind, I talked with fellow hikers, I chatted with my dad, I talked with Monica, and I prayed to Jesus a lot. I had a great week and physically I had one of my best weeks on the trail. Mentally it was a long hard week, and when it came to the end I still didn’t know what I was going to do. Going into my zeros with Monica I thought I was going to continue on. I planned like I was continuing on with resupply boxes sent ahead and everything. Then when I was with Monica all the thoughts of missing her flooded back. It was good to wake up next to her. It was good to hear her voice and her laugh. It was good to hold her in my arms. It felt like she hadn’t been with me in forever.
+
+I married Monica to be with her. If Monica hadn’t started the PCT with me, I would not have started it at all. I voluntarily decided to keep going without her. Those were some of the thoughts swimming around in my head. I love Monica and when I married her I put her in front of my dreams — like hiking the PCT. With all those thoughts and more I decided that my time on the trail this year was done. I was getting off. I was going to be with my wife. In the end the decision was not hard. I wanted to be with my wife. I wanted to be with her more than I wanted to hike — and I wanted to hike a lot.
+
+So far I don’t regret the decision. I made peace with not continuing on. If I had stopped 400 miles ago I know I wouldn’t have the same peace that I have now. I made it 700 miles! I hiked the entire desert section! I have great stories and memories. I had the Sierra in my view, and while I know I’m missing more beauty than I can imagine, I’m ok with not seeing it. Maybe someday I’ll come back and tackle the Sierra. What I do know is that while I was on the trail I gave it all I had.
+
+Driving home with Monica we got to see the Sierra in the distance off to the side and we also go to meet up with some friends from the trail. We met some amazing people — some of whom we are sure will be life long friends.
+
+{{ post_img(path="images/1.HEIC", alt="") }}

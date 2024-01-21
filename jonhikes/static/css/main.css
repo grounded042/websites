@@ -2,15 +2,20 @@
 :visited { color: #551A8B; }
 :link:active, :visited:active { color: #FF0000; }
 :link, :visited { text-decoration: underline; cursor: pointer; }
+a:hover { background-color: black; color: white; }
+a:hover h2 { background-color: black; color: white; }
 
 @media (prefers-color-scheme: dark) {
-	:link { color: #9E9EFF; }
+	.pagination > a:visited, :link { color: #9E9EFF; }
 	:visited { color: #D0ADF0; }
 	:link:active, :visited:active { color: #FF9E9E; }
 	:link, :visited { text-decoration: underline; cursor: pointer; }
+	a:hover { background-color: white; color: black; }
+	a:hover h2 { background-color: white; color: black; }
 }
 
-body > header, body > footer, body > #content > #posts, body > #content > .post {
+body > header, body > footer, body > #content > #posts,
+body > #content > .post, body > #content > .pagination {
 	max-width: 800px;
 	margin: auto;
 	font: 14px/1.5 monospace;
@@ -33,15 +38,7 @@ img {
 	width: 100%;
 }
 
-a:hover {
-	background-color: black;
-	color: white;
-}
 
-a:hover h2 {
-	background-color: black;
-	color: white;
-}
 
 .list-post h2 {
 	margin-bottom: 0;
@@ -146,4 +143,18 @@ a:hover h2 {
 
 .cover p {
 	margin-top: 0;
+}
+
+.pagination {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.pagination > a {
+	margin: 5px;
+}
+
+.pagination > a.current {
+	text-decoration: none;
 }

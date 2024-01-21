@@ -13,8 +13,10 @@ convert_image() {
 	local original_file="$3"
 	local new_file="$4"
 
-	echo "Removing $new_file"
-	rm -f "$new_file"
+	if [[ -f "$new_file" ]]; then
+		echo "Skipping $new_file as it already exists."
+		return
+	fi
 
 	echo "Converting $original_file to $new_file"
 	if [[ "$format" == "jpeg" ]]; then

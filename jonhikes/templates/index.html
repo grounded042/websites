@@ -36,7 +36,7 @@
 	<h1>Posts</h1>
 	{% set blog_posts = get_section(path="posts/_index.md") %}
 	  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-	{% for post in blog_posts.pages %}
+	{% for post in paginator.pages %}
 	<div class="list-post">
 		<header>
 			<a aria-label="post link to {{ post.title }}" href="{{ post.permalink | safe }}"><h2>{{ post.title }}</h2></a>
@@ -54,4 +54,21 @@
 	{% endif %}
 	{% endfor %}
 </div>
+<nav class="pagination">
+	{% if paginator.previous %}
+	<a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+	{% endif %}
+	{% for i in range(start=1, end=paginator.number_pagers+1) %}
+	{% if i == paginator.current_index %}
+	<a class="current" href="#"><b>{{i}}</b></a>
+	{% elif i > 1 %}
+	<a href="{{ paginator.base_url | safe }}{{ i ~ '/' }}">{{i}}</a>
+	{% else %}
+	<a class="inp on" href="{{ paginator.first | safe }}">{{ i }}</a>
+	{% endif %}
+	{% endfor %}
+	{% if paginator.next %}
+	<a class="next" href="{{ paginator.next }}">Next ›</a>
+	{% endif %}
+</nav>
 {% endblock content %}

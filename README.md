@@ -1,9 +1,11 @@
-jonhikes
+websites
 ========
+
+My websites. For now it's just [jonhikes.com](https://jonhikes.com)
 
 # site
 I tried hugo, but it was too much. I am currently using Zola, but it's not my
-favorite. I need something simple. The on missing feature is I want it to
+favorite. I need something simple. The one missing feature is I want it to
 validate that all referenced images exist.
 
 # images
@@ -29,12 +31,4 @@ We will have resolutions with a width higher than 800px, but only for density.
 The post cover image is expected to be wdith of 800px and height of 267px max.
 This corresponds to a ratio of 3:2.
 
-TODO: change the one script to only work for post images
-
 For logo and site images, there is a script for them too.
-
-TODO: write a script for logo and site cover.
-
-800, 1200, 1600, 2400, 3200, 4000
-
-
