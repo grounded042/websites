@@ -7,6 +7,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<style type="text/css">body{font-family:monospace;}</style>
 
+		{% if page.title %}
+			{% set title = config.title ~ ' | ' ~ page.title %}
+		{% else %}
+			{% set title = config.title %}
+		{% endif %}
+		<meta property="og:title" content="{{ title }}" />
+		
+		{% if page %}
+			<meta property="og:type" content="article" />
+			<meta property="og:description" content="{{ page.content | striptags | truncate(length=200) | trim | safe }}" />
+		{% else %}
+			<meta property="og:type" content="website" />
+		{% endif %}
+
+		{% if page %}
+			{% set img_path = page.permalink ~ page.extra.image %}
+		{% else %}
+			{% set img_path = get_url(path="images/cover.jpeg") %}
+		{% endif %}
+		<meta property="og:image" content="{{ img_path | replace(from="HEIC", to="jpeg") }}" />
+		<meta property="og:url" content="{{ current_url }}" />
 
 		<link rel="stylesheet" href="{{ get_url(path="css/normalize.css") }}">
 		<link rel="stylesheet" href="{{ get_url(path="css/main.css") }}">
@@ -19,7 +40,7 @@
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
 		{% endblock %}
 
-		<title>{{ config.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+		<title>{{ title }}</title>
 	</head>
 	<body>
 		<header>
