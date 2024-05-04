@@ -42,6 +42,7 @@ We got to the lake we were planning on camping at around 3:30. We rested for a b
 
 {{ post_img(path="images/22.HEIC", alt="") }}
 {{ post_img(path="images/23.HEIC", alt="") }}
-{{ post_img(path="images/24.HEIC", alt="") }}
 
 About 30 minutes later, it rained lightly for a bit and then slowly cleared up. After resting in the tent, we got up and worked on our dinner. Tonight was Annie’s mac & cheese with salmon and bacon bits. For dessert, we dug into the party-size double stuf Oreos. 1 pound, 10 ounces, but worth it. The day's mileage was 12.78, according to my GPS. I’m also taking my Apple Watch Ultra to see if it can stand up to a long backpacking trip. At the end of the day, I was at 90% battery. Not too bad. 
+
+{{ post_img(path="images/24.HEIC", alt="") }}
