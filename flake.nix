@@ -21,6 +21,10 @@
           (modulesPath + "/virtualisation/digital-ocean-config.nix")
         ];
 
+        environment.systemPackages = with pkgs; [
+          goaccess
+        ];
+
         system.stateVersion = "23.11";
 
         networking.firewall.allowedTCPPorts = [ 22 80 443 ];
@@ -30,11 +34,27 @@
           defaults.email = "me@joncarl.com";
         };
 
+        services.logrotate.settings.nginx.frequency = "daily";
+
         services.nginx = {
           enable = true;
           recommendedBrotliSettings = true;
           recommendedGzipSettings = true;
           recommendedZstdSettings = true;
+          commonHttpConfig = ''
+server {
+  listen 80 default_server;
+  listen 443 ssl default_server;
+
+  ssl_reject_handshake on;
+
+  return 444;
+}
+'';
+          appendHttpConfig = ''
+log_format vcombined '$host:$server_port $remote_addr - $remote_user [$time_local] "$request" $status $body_bytes_sent "$http_referer" "$http_user_agent"';
+access_log /var/log/nginx/access.log vcombined;
+'';
           virtualHosts = {
             "jonhikes.com" = {
               forceSSL = true;
