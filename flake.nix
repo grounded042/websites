@@ -4,14 +4,15 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    colmena.url = "github:zhaofengli/colmena";
   };
 
-  outputs = { self, nixpkgs, ...}@inputs: let
+  outputs = { self, nixpkgs, colmena, ...}@inputs: let
     pkgs = import nixpkgs {
       system = "x86_64-linux";
     };
   in {
-    colmena = {
+    colmenaHive = colmena.lib.makeHive {
       meta = {
         nixpkgs = pkgs;
       };
