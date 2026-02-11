@@ -2,7 +2,7 @@
   description = "websites setup";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     colmena.url = "github:zhaofengli/colmena";
   };
@@ -41,7 +41,6 @@
           enable = true;
           recommendedBrotliSettings = true;
           recommendedGzipSettings = true;
-          recommendedZstdSettings = true;
           commonHttpConfig = ''
 server {
   listen 80 default_server;
