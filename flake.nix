@@ -11,7 +11,35 @@
     pkgs = import nixpkgs {
       system = "x86_64-linux";
     };
+
+    # Helper to create dev shell for a system
+    mkDevShell = system: let
+      devPkgs = import nixpkgs { inherit system; };
+    in devPkgs.mkShell {
+      buildInputs = with devPkgs; [
+        go
+        gopls
+        imagemagick
+        pkg-config
+        zola
+        bash
+      ];
+
+      shellHook = ''
+        export PKG_CONFIG_PATH="${devPkgs.imagemagick}/lib/pkgconfig:$PKG_CONFIG_PATH"
+        echo "✓ Development shell loaded"
+        echo "  Go: $(go version)"
+        echo "  ImageMagick: $(magick -version | head -1)"
+        echo ""
+        echo "Build cover-crop:"
+        echo "  go build -o cover-crop ./cmd/cover-crop"
+      '';
+    };
   in {
+    # Development shells for different platforms
+    devShells.aarch64-darwin.default = mkDevShell "aarch64-darwin";
+    devShells.x86_64-linux.default = mkDevShell "x86_64-linux";
+
     colmenaHive = colmena.lib.makeHive {
       meta = {
         nixpkgs = pkgs;
