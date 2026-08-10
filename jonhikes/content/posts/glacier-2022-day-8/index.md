@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 8"
 date: 2022-12-06
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-09-04
 ---
 
 We woke up to the sound of others getting their breakfast. We got up and packed our gear away quickly — not because we were in a hurry, but because after 8 days on the trail we know just what we need to do and how to do it efficiently. After packing our gear up we went over to grab breakfast before heading out on the trail.

@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 4"
 date: 2022-11-05
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-08-31
 ---
 
 During the night I woke up and gazed at the stars. The sky was so dark and light pollution so far away that we could see a lot of stars. Some stars you could only see by looking at a different star and then noticing twinkling little dots around it. I gazed around for 20–30 minutes just taking everything in before heading back to sleep.

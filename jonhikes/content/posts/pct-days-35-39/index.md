@@ -3,6 +3,8 @@ title: "PCT Days 35-39"
 date: 2018-06-02
 extra:
   image: images/cover.HEIC
+  hike_date: 2018-05-29
+  hike_date_end: 2018-06-02
 ---
 
 Trail Miles: 342–363.4

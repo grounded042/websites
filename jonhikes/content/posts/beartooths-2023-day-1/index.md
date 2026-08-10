@@ -3,6 +3,7 @@ title: "Beartooths 2023 - Day 1"
 date: 2024-04-27
 extra:
   image: images/cover.HEIC
+  hike_date: 2023-08-26
 ---
 
 We woke up at five at our friend's house in Billings. We had packed everything into the car the night before, so we changed into our hiking clothes, ate a quick breakfast, and headed out. It was a 2-and-a-half-hour drive to the trailhead, and we made good time. The last portion of the road was on the Beartooth Highway, which was beautiful.

@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 2"
 date: 2022-10-22
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-08-29
 ---
 
 

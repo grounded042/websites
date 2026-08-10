@@ -3,6 +3,7 @@ title: "Beartooths 2023 - Day 5"
 date: 2024-05-25
 extra:
   image: images/cover.HEIC
+  hike_date: 2023-08-30
 ---
 
 We woke up around ten or eleven PM to strong winds accompanied by thunder, lightning, and rain. The wind gusts were so strong they were bowing the tent in on us. We lay there wide awake praying the tent would hold and that the storm would pass. About an hour later things finally calmed down. We both got out of the tent to look around and could see stars directly ahead. We could also see the storm still traveling off in the distance.

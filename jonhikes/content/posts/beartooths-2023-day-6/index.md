@@ -3,6 +3,7 @@ title: "Beartooths 2023 - Day 6"
 date: 2024-06-01
 extra:
   image: images/cover.HEIC
+  hike_date: 2023-08-31
 ---
 
 We woke up at a normal time and the tent was dry. No strong winds had come in the night and we had slept great.

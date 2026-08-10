@@ -3,6 +3,7 @@ title: "Beartooths 2023 - Day 4"
 date: 2024-05-18
 extra:
   image: images/cover.HEIC
+  hike_date: 2023-08-29
 ---
 
 We slowly woke up listening to the rush of the nearby creek. Dew had settled onto the tent again, but no rain in the night. Excited for the day we quickly ate breakfast (frosted banana bread pop tart for me) and packed up our gear. 

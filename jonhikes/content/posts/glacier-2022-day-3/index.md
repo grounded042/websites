@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 3"
 date: 2022-10-29
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-08-30
 ---
 
 Today we woke up in a dry tent. We were excited because the trail ahead was supposed to be relatively flat, and tomorrow is a day with no hiking.

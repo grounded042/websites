@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 5"
 date: 2022-11-15
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-09-01
 ---
 
 As the day started up, so did we. There wasn’t a lot of ground to cover today, but we liked getting to our campsites early so we could rest and hit the water if we wanted.

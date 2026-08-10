@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 0"
 date: 2022-10-08
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-08-27
 ---
 
 {{ post_img(path="images/1.HEIC", alt="our tent at the KOA") }}

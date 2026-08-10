@@ -3,6 +3,7 @@ title: "Beartooths 2023 - Day 2"
 date: 2024-05-04
 extra:
   image: images/cover.HEIC
+  hike_date: 2023-08-27
 ---
 
 We woke up to brightening skies a little after 6. The inside of the rainfly was wet from humidity and the outside of it was damp as well. There hadn’t been rain in the night which was nice. We packed everything up except the tent and ate breakfast. I had frosted banana bread Pop-Tarts which were delicious. We had hoped the sun would be high enough to dry the tent before we left, but it wasn’t. We packed the wet tent up and headed out. 

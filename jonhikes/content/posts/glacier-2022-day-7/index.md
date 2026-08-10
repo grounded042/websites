@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 7"
 date: 2022-11-27
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-09-03
 ---
 
 We started out today early since we had a lot of uphill and we wanted to do it before it got too hot outside. The GPS weather was saying it would be in the 80s today and we wanted to avoid that.

@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 9"
 date: 2022-12-28
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-09-05
 ---
 
 In the early evening, after turning in the for the night, we could hear some rustling in the woods. A small trail ran near our tent to get to other campsites. I heard what I think was a bear walk by — the snorts from their nose and the faint sound of their paws on the ground coupled with hearing another camper yell “get out of here bear” several minutes later confirmed it. Other than that we had an uneventful night in the tent.

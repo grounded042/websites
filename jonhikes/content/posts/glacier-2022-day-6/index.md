@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 6"
 date: 2022-11-19
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-09-02
 ---
 
 During the night I awoke with rain hitting my face. We were camping without the rain fly even though the weather on my GPS said 5% chance of rain. I quickly jumped outside and pulled the rain fly onto the tent. It rained for about 15 minutes and then stopped. When we woke up in the morning the rain fly was dry and it was as if it hadn’t rained at all.

@@ -3,6 +3,7 @@ title: "Beartooths 2023 - Day 3"
 date: 2024-05-11
 extra:
   image: images/cover.HEIC
+  hike_date: 2023-08-28
 ---
 
 We woke up around 6 and lay in the tent for a bit. There hadn’t been rain in the night, but the rain fly was soaked with dew. As we got up we moved our gear into a nearby field that was already getting the morning sun. All of our wet gear was quickly laid out to dry. The rocks weren’t warm yet so the drying went slow. I ended up draping the rain fly across trekking poles to help it dry faster.

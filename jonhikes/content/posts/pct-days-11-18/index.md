@@ -3,6 +3,8 @@ title: "PCT Days 11–18"
 date: 2018-05-12
 extra:
   image: images/cover.HEIC
+  hike_date: 2018-05-05
+  hike_date_end: 2018-05-12
 ---
 
 Trail Miles: 109.5–166.6 + 15 off trail

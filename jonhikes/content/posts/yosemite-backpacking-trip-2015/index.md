@@ -3,6 +3,8 @@ title: "Yosemite Backpacking Trip 2015"
 date: 2016-07-25
 extra:
   image: images/cover.HEIC
+  hike_date: 2015-05-17
+  hike_date_end: 2015-05-21
 ---
 
 Back in May of 2015 I took a trip out to Yoesmite and backpacked for 5 days and over 50 miles. Yosemite was cold and wet around that time of the year, but that did not deter me from having a good time. I saw some amazing sites, and I got to see the park with snow — something that not everyone gets to experience. Below are photos as well as a video of the trip.

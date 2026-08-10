@@ -3,6 +3,8 @@ title: "PCT Days 1-5"
 date: 2018-04-29
 extra:
   image: images/cover.HEIC
+  hike_date: 2018-04-25
+  hike_date_end: 2018-04-29
 ---
 
 Trail Miles: 1–41.5

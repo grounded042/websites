@@ -3,6 +3,7 @@ title: "Glacier 2022 - Day 1"
 date: 2022-10-15
 extra:
   image: images/cover.HEIC
+  hike_date: 2022-08-28
 ---
 
 Today started earlier than yesterday — we got up at 4:45 to eat breakfast, pack our tent up, and head into the park. The early start was to beat the traffic and make sure we got a parking spot at our trailhead.

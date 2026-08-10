@@ -29,3 +29,15 @@
 	</picture>
 </div>
 {% endmacro post_img %}
+
+{% macro post_meta(page, full=false) -%}
+{%- if page.extra.hike_date -%}
+	{%- if full -%}
+	Hiked {{ page.extra.hike_date }}{% if page.extra.hike_date_end %}&ndash;{{ page.extra.hike_date_end }}{% endif %} &middot; Published {{ page.date }}
+	{%- else -%}
+	{{ page.extra.hike_date }}{% if page.extra.hike_date_end %}&ndash;{{ page.extra.hike_date_end }}{% endif %}
+	{%- endif -%}
+{%- else -%}
+	{{ page.date }}
+{%- endif -%}
+{% endmacro post_meta %}
