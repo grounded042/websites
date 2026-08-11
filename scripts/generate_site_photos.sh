@@ -2,6 +2,11 @@
 
 # TODO: convert to more standard script stuff
 
+export verbose=0
+if [[ "$1" == "-v" || "$1" == "--verbose" ]]; then
+	export verbose=1
+fi
+
 script_path=$(realpath "$0")
 # NOTE(joncarl): we export anything the convert_image function will need
 export abs_script_dir=$(dirname $script_path)
@@ -14,7 +19,7 @@ convert_image() {
 	local new_file="$4"
 
 	if [[ -f "$new_file" ]]; then
-		echo "Skipping $new_file as it already exists."
+		[[ "$verbose" == "1" ]] && echo "Skipping $new_file as it already exists."
 		return
 	fi
 
