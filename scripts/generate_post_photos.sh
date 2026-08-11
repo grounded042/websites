@@ -20,9 +20,9 @@ convert_image() {
 
 	echo "Converting $original_file to $new_file"
 	if [[ "$format" == "jpeg" ]]; then
-		magick convert "$original_file" -resize "$width" -strip -profile "$script_dir/DisplayP3.icc" -format "$format" "$new_file"
+		magick "$original_file" -resize "$width" -strip -profile "$script_dir/DisplayP3.icc" -format "$format" "$new_file"
 	else
-		magick convert "$original_file" -resize "$width" -strip -profile "$script_dir/DisplayP3.icc" -format jpeg -sampling-factor 4:2:0 -quality 85 -interlace JPEG "$new_file"
+		magick "$original_file" -resize "$width" -strip -profile "$script_dir/DisplayP3.icc" -format jpeg -sampling-factor 4:2:0 -quality 85 -interlace JPEG "$new_file"
 	fi
 }
 

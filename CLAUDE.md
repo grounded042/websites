@@ -12,16 +12,16 @@ This repository contains jonhikes.com, a hiking blog built with Zola (static sit
 
 Enter the Nix development shell for Go/ImageMagick tools:
 ```bash
-nix-shell
+nix develop
 ```
 
-This provides: Go, ImageMagick with dev headers, Zola, and pkg-config.
+This provides: Go, ImageMagick with dev headers, Zola, and pkg-config, all pinned to the flake's nixpkgs input (do not use `nix-shell`/`shell.nix` — that falls back to your global nixpkgs channel, which can be a stale, mismatched version).
 
 ### Cover Photo Tool
 
 Build the interactive cover photo cropper:
 ```bash
-nix-shell --run "go build -o cover-crop ./cmd/cover-crop"
+nix develop --command go build -o cover-crop ./cmd/cover-crop
 ```
 
 Usage:
@@ -145,4 +145,4 @@ Deploy infrastructure changes:
 colmena apply --build-on-target --on webserver
 ```
 
-The flake uses nixpkgs 25.11 stable for the server deployment configuration.
+The flake uses nixpkgs nixos-26.05 for the server deployment configuration.
