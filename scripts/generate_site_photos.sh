@@ -19,7 +19,9 @@ convert_image() {
 	local new_file="$4"
 
 	if [[ -f "$new_file" ]]; then
-		[[ "$verbose" == "1" ]] && echo "Skipping $new_file as it already exists."
+		if [[ "$verbose" == "1" ]]; then
+			echo "Skipping $new_file as it already exists."
+		fi
 		return
 	fi
 

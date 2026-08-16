@@ -11,7 +11,9 @@ echo "Generating post images..."
 ./scripts/generate_post_photos.sh
 
 echo "Building site with Zola..."
-cd jonhikes && zola build && cd ..
+pushd jonhikes > /dev/null
+zola build
+popd > /dev/null
 
 echo "Deploying to server..."
 rsync -avz --delete jonhikes/public/ root@69.55.55.245:/site/jonhikes/
