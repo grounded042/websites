@@ -2,6 +2,7 @@
 base_url = "https://jonhikes.com"
 
 title = "Jon Hikes"
+description = "The trail journals of Jon Carl as he hikes the world."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false

@@ -4,6 +4,9 @@ set -e
 # Go to repo root
 cd "$(dirname "$0")/.."
 
+echo "Stripping EXIF from source images..."
+./scripts/strip_exif.sh
+
 echo "Generating site images..."
 ./scripts/generate_site_photos.sh
 

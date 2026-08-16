@@ -17,6 +17,7 @@
       devPkgs = import nixpkgs { inherit system; };
     in devPkgs.mkShell {
       buildInputs = with devPkgs; [
+        exiftool
         go
         gopls
         imagemagick

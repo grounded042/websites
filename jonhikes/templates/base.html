@@ -8,17 +8,15 @@
 		<style type="text/css">body{font-family:monospace;}</style>
 
 		{% if page.title %}
-			{% set title = config.title ~ ' | ' ~ page.title %}
+			{% set title = page.title ~ ' | ' ~ config.title %}
 		{% else %}
 			{% set title = config.title %}
 		{% endif %}
-		<meta property="og:title" content="{{ title }}" />
-		
+
 		{% if page %}
-			<meta property="og:type" content="article" />
-			<meta property="og:description" content="{{ page.content | striptags | truncate(length=200) | trim | safe }}" />
+			{% set description = page.content | striptags | regex_replace(pattern="\s+", rep=" ") | trim | truncate(length=200) %}
 		{% else %}
-			<meta property="og:type" content="website" />
+			{% set description = config.description %}
 		{% endif %}
 
 		{% if page %}
@@ -26,12 +24,54 @@
 		{% else %}
 			{% set img_path = get_url(path="images/cover.jpeg") %}
 		{% endif %}
-		<meta property="og:image" content="{{ img_path | replace(from="HEIC", to="jpeg") }}" />
+		{% set img_url = img_path | replace(from="HEIC", to="jpeg") %}
+
+		<meta name="description" content="{{ description }}">
+		<link rel="canonical" href="{{ current_url }}">
+
+		<meta property="og:site_name" content="{{ config.title }}" />
+		<meta property="og:title" content="{{ title }}" />
+		{% if page %}
+			<meta property="og:type" content="article" />
+		{% else %}
+			<meta property="og:type" content="website" />
+		{% endif %}
+		<meta property="og:description" content="{{ description }}" />
+		<meta property="og:image" content="{{ img_url }}" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta property="og:image:width" content="800" />
+		<meta property="og:image:height" content="267" />
 		<meta property="og:url" content="{{ current_url }}" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="{{ title }}" />
+		<meta name="twitter:description" content="{{ description }}" />
+		<meta name="twitter:image" content="{{ img_url }}" />
+
+		{% if page %}
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			"headline": {{ page.title | json_encode | safe }},
+			"description": {{ description | json_encode | safe }},
+			"image": {{ img_url | json_encode | safe }},
+			"datePublished": {{ page.date | date(format="%Y-%m-%d") | json_encode | safe }},
+			"author": {
+				"@type": "Person",
+				"name": {{ config.author | json_encode | safe }}
+			},
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": {{ current_url | json_encode | safe }}
+			}
+		}
+		</script>
+		{% endif %}
 
 		<link rel="stylesheet" href="{{ get_url(path="css/normalize.css") }}">
 		<link rel="stylesheet" href="{{ get_url(path="css/main.css") }}">
-	
+
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
