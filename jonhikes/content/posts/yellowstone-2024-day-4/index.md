@@ -31,7 +31,7 @@ For dinner we had tortillas, dried pulled pork, BBQ sauce, and Chic-fil-A sauce.
 
 Tomorrow would be another short day heading back to Heart Lake, and we were eager to be back to a lake we could swim in.
 
-Food:
+Food Journal:
 - Breakfast: banana bread pop-tarts, chocolate covered coffee beans. Good. Would have again as it’s nice and fast.
 - Lunch: protein bars, fruit strips, cheese wheel, meat sticks, and beef jerky. For drinks I mixed dad’s root beer with strawberry crush. It was ok.
 - Dinner: two tortillas, dried pulled pork, BBQ sauce, Chic-fil-A sauce. Oreos. Fantastic meal. Would do again. Try Walmart pulled pork instead as it’s cheaper. One Chic-fil-A sauce was enough. 2 oz bottle of BBQ sauce shared between us was also enough. Tortillas were amazing. Maybe next time do smaller ones.
